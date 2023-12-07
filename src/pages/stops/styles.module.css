@@ -81,13 +81,3 @@
   border: 1px solid var(--color-border-gray);
   min-width: 330px;
 }
-
-.interval_container {
-  position: absolute;
-  bottom: 12px;
-  left: 12px;
-  border-radius: var(--radius-primary);
-  padding: 12px 20px;
-  background-color: var(--color-bg);
-  z-index: 1000;
-}

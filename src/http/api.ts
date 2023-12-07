@@ -1,7 +1,7 @@
 'use client'
 
 import { baseHeaders } from './baseHeaders.js'
-type servise_name = 'bus' | 'chats' | 'accident'
+type servise_name = 'bus' | 'chats' | 'accident' | 'ai'
 const API = (service: servise_name, endpoint: string) =>
   `https://${service}.e-bus.site/${endpoint}`
 

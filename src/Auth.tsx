@@ -14,22 +14,7 @@ export const Auth = ({ children }: { children: ReactNode }) => {
   console.log(keycloak.authenticated);
   useEffect(() => {
     if (initialized && keycloak.authenticated) {
-      const centrifuge = new Centrifuge('wss://chat.e-bus.site/connection/websocket', {
-        token: keycloak.token,
-        getToken: function () {
-          return new Promise((resolve, reject) => {
-            keycloak
-              .updateToken(5)
-              .then(function () {
-                resolve(keycloak.token)
-              })
-              .catch(function (err) {
-                reject(err)
-                keycloak.logout()
-              })
-          })
-        },
-      })
+      const centrifuge = new Centrifuge('wss://chat.e-bus.site/connection/websocket')
       setcentrifuge(centrifuge)
       centrifuge.on('state', function (ctx) {
         setConnectionState(ctx.newState)
