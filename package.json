@@ -1,0 +1,39 @@
+{
+  "name": "ebus_emap",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@2gis/mapgl": "^1.41.1",
+    "@2gis/mapgl-clusterer": "^2.5.0",
+    "@2gis/mapgl-directions": "^2.0.1",
+    "@2gis/mapgl-ruler": "^2.0.4",
+    "@react-keycloak/web": "^3.4.0",
+    "centrifuge": "^5.0.1",
+    "javascript-time-ago": "^2.5.9",
+    "keycloak-js": "^23.0.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.20.1",
+    "recoil": "^0.7.7"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.37",
+    "@types/react-dom": "^18.2.15",
+    "@typescript-eslint/eslint-plugin": "^6.10.0",
+    "@typescript-eslint/parser": "^6.10.0",
+    "@vitejs/plugin-react": "^4.2.0",
+    "eslint": "^8.53.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.4",
+    "typescript": "^5.2.2",
+    "vite": "^5.0.0",
+    "vite-plugin-svgr": "^4.2.0"
+  }
+}

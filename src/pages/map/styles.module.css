@@ -1,0 +1,17 @@
+.page_container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.actions {
+  display: flex;
+  gap: 24px;
+}
+
+.map {
+  flex: 60vh;
+  border-radius: var(--radius-primary);
+  overflow: hidden;
+}
